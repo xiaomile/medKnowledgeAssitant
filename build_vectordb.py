@@ -58,7 +58,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 split_docs = text_splitter.split_documents(docs)
 
 # 加载开源词向量模型
-embeddings = HuggingFaceEmbeddings(model_name="/root/data/model/sentence-transformer")
+embeddings = HuggingFaceEmbeddings(model_name="/model/sentence-transformer")
 
 # 构建向量数据库
 # 定义持久化路径
