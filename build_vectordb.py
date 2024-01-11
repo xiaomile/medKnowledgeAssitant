@@ -44,7 +44,7 @@ def get_text(dir_path):
 
 # 目标文件夹
 tar_dir = [
-    "/root/data/"
+    "/home/xlab-app-center/data/"
 ]
 
 # 加载目标文件
@@ -58,11 +58,11 @@ text_splitter = RecursiveCharacterTextSplitter(
 split_docs = text_splitter.split_documents(docs)
 
 # 加载开源词向量模型
-embeddings = HuggingFaceEmbeddings(model_name="/model/sentence-transformer")
+embeddings = HuggingFaceEmbeddings(model_name="/home/xlab-app-center/model/sentence-transformer")
 
 # 构建向量数据库
 # 定义持久化路径
-persist_directory = 'data_base/vector_db/chroma'
+persist_directory = '/home/xlab-app-center/data_base/vector_db/chroma'
 # 加载数据库
 vectordb = Chroma.from_documents(
     documents=split_docs,
