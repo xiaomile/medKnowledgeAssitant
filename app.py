@@ -6,6 +6,9 @@ from LLM import InternLM_LLM
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
+import model_download
+import build_vectordb
+
 def load_chain():
     # 加载问答链
     # 定义 Embeddings
