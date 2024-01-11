@@ -6,8 +6,8 @@ from LLM import InternLM_LLM
 from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 
-import model_download
-import build_vectordb
+os.system("python model_download.py")
+os.system("python build_vectordb.py")
 
 def load_chain():
     # 加载问答链
