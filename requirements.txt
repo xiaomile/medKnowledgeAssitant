@@ -1,5 +1,5 @@
 modelscope==1.9.5
-transformers==4.4.2
+transformers==4.35.2
 accelerate==0.24.1
 gradio==4.4.0
 unstructured==0.10.30
